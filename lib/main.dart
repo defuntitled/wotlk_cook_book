@@ -64,10 +64,17 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ), 
       ),
-     body: const TabBarView(
-        children: [
-          Icon(Icons.directions_car),
-          Icon(Icons.directions_transit),
+     body:  TabBarView(
+        children: [GridView.count(
+          padding:  const EdgeInsets.all(20),
+          crossAxisCount: 2,
+          crossAxisSpacing: 10,
+          mainAxisSpacing: 10,
+          children: [
+            classCard(color: Color.fromARGB(255, 245, 140, 185),eColor: Color.fromARGB(255, 179, 102, 135),classname: S.of(context).paladin,classIcon: Icon(Icons.male),)
+          ],
+          ),
+          Icon(Icons.adb)
   ],
     ),
     bottomNavigationBar: const BottomAppBar(
@@ -82,6 +89,57 @@ class _MyHomePageState extends State<MyHomePage> {
           ),
         ]),
     ),
+    );
+  }
+}
+
+class classCard extends StatelessWidget {
+  
+  // ignore: use_key_in_widget_constructors
+  const classCard({
+    Key? key,
+    this.color = Colors.white,
+    this.eColor = Colors.white,
+    this.classname = '',
+    required this.classIcon,
+  });
+  final Color color;
+  final Color eColor;
+  final String classname;
+  final Icon classIcon;
+  void zaglushka(BuildContext context){
+    final scaffold = ScaffoldMessenger.of(context);
+     scaffold.showSnackBar(
+      SnackBar(
+        content: const Text('Added to favorite'),
+        action: SnackBarAction(label: 'UNDO', onPressed: scaffold.hideCurrentSnackBar),
+      ),
+    );
+  }
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () => zaglushka(context),
+      child: Container(
+        decoration: BoxDecoration(
+          gradient: LinearGradient(
+            begin: Alignment.topRight,
+            end: Alignment.bottomCenter,
+            colors: [color, eColor,]
+          ),
+          borderRadius: BorderRadius.circular(15),
+        ),
+        child: Card(
+            color: Colors.transparent,
+            elevation: 0,
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+              classIcon,
+              Text(classname,style:const TextStyle(fontFamily: 'Areal'),),
+            ]),
+        ),
+      ),
     );
   }
 }
