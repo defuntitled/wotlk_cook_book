@@ -1,0 +1,37 @@
+{
+    "ID":"011",
+    "Title": "Paladin",
+    "Specialization":"Retribution",
+    "Horde_best_race":"Blood Elf",
+    "Alliance_best_race":"Human",
+    "Best_professions": ["Mining is one of the profitable professions you can pick up, you can also use it to grind up engineering since the only downfall of engineering is having either a lot of materials to level it up or having a lot of gold",
+    "Engineering is a must have for high end raiding, and that is for two reasons, first of all, engineering haste gloves Hyperspeed Accelerators, which is a huge boost to your haste, it offers 340 haste rating every 48 seconds, its a must have for any haste abusing class."],
+    "Stats_priority":["Hit","Expertise","Strength","Critical Strike Rating","Agility","Haste"],
+    "Build":"011.jpg",
+    "Glyphs":{
+        "Major_glyphs":["Glyph of Exorcism","Glyph of Seal of Vengeance","Glyph of Judgement"],
+        "Minor_glyphs":["Glyph of Sense Undead","Glyph of Lay on Hands","Glyph of Blessing of Might"]
+    },
+    "Gems":{
+        "Red":"Bold Cardinal Ruby",
+        "Yellow":"Rigid King's Amber/Quick King's Amber",
+        "Meta":"Chaotic Skyflare Diamond",
+        "Prismatic":"Nightmare Tear"
+    },
+    "Enchants":{
+        "Head": "Arcanum of Torment",
+        "Shoulders":"Greater Inscription of the Axe",
+        "Cloak": "Enchant Cloak - Greater Speed",
+        "Chest": "Enchant Chest - Powerful Stats",
+        "Bracers":"Enchant Bracers - Greater Assault",
+        "Gloves": "Hyperspeed Accelerators",
+        "Belt": "Eternal Belt Buckle",
+        "Legs":"Icescale Leg Armor",
+        "Boots":"Nitro Boosts",
+        "Weapon":"Scroll of Enchant Weapon - Berserking"
+    },
+    "Alchemy":["Potion of Speed","Flask of Endless Rage"],
+    "Rotation":"Use Seal of Vengeance for single target. Base damage cycle looks like Judgement of Wisdom -> GCD -> Divine Storm-> GCD -> Crusader Strike-> GCD -> Divine Storm -> reset.\n For AoE damage use Seal of command and Consecrationand-> Crusader Strike"
+    
+
+}

@@ -102,7 +102,7 @@ class classCard extends StatelessWidget {
     this.eColor = Colors.white,
     this.classname = '',
     required this.classIcon,
-  });
+  }):super(key: key);
   final Color color;
   final Color eColor;
   final String classname;
